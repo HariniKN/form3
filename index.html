@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Form</title>
+   
+</head>
+<body bgcolor="">
+    <fieldset height="200" wedth="200">
+       <legend>Persnal_Details</legend>
+    <form action="message2.html">
+    <br>
+    <label for="sal">Salutation</label>
+    <select name="sal" id="sal">
+      <option value="text">--None--</option>
+     <option value="text">Mr.</option>
+     <option value="text">Mrs.</option>
+      <option value="text">Dr.</option>
+     
+      
+    </select>
+    <br><br>
+    
+    <label for="First_name">Name</label>
+    &nbsp; &nbsp;
+    <input type="text" required placeholder="ex:first_name"  id="name" name="name" pattern="[A-Za-z]{3,8}">
+    <br><br>
+     
+    <label for="Lastname">L_name</label>
+    <input type="text" required placeholder="ex:l_name" id="lastname" name="name">
+    <br><br>
+
+    <label for="CGPA">CGPA/Percentage</label>
+    <input type="numberes" required placeholder="ex:6.0 or 60" id="CGPA" name="name">
+    <br><br>
+    <!--for addres we have to use textarea-->
+    <label for="add">Address</label>
+    <br><br>
+    <textarea name="add" id="add" cols="30" rows="10"></textarea>
+    <br><br>
+  
+    <label for="Email">Email</label>
+    &nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="email" required placeholder="ex:email or gmail " id="email" name="name">
+    <br><br>
+     
+    <label for="phonenumber">Phone_number</label>
+    &nbsp; &nbsp;
+    <input type="number" required placeholder="ex:+91 9108976863" id="phonenumber"  name="name" pattern="[6-9]{1}[0-9]{9}">
+    <br><br>
+     
+    <label for="Date">DOB</label>
+    &nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="Date" id="Date" name="Date">
+    </fieldset>
+  
+    <fieldset>
+        <legend>Department</legend>
+
+        <label for="yop">CS</label>
+        <input type="radio" id="yop" name="dept">
+         
+        <label for="yop">ECE</label>
+        <input type="radio" id="yop" name="dept">
+
+        <label for="yop">IS</label>
+        <input type="radio" id="yop" name="dept">
+
+        <label for="yop">Civil</label>
+        <input type="radio" id="yop" name="dept">
+
+        <label for="yop">Mecanical</label>
+        <input type="radio" id="yop" name="dept">
+    
+        
+        <br><br>
+    
+         <label for="yop">YOP</label>
+         <input list="dept"  id="yop"  name="yop">
+         <datalist id="dept">
+            <option>2018</option>
+            <option>2019</option>
+            <option>2020</option>
+            <option>2021</option>
+            <option>2022</option>
+            <option>2023</option>
+         </datalist>
+        </fieldset>
+         <fieldset>
+            <legend>Skilles</legend>
+         <label for="">Java</label>
+         <input type="checkbox">
+          <br><br>
+          <label for="">Python</label>
+           <input type="checkbox">
+           <br><br>
+          <label for="">SQL</label>
+          <input type="checkbox">
+           <br><br>
+          <label for="">Problom solving</label>
+          <input type="checkbox">
+          <br><br>
+           <label for="os">Other</label>
+           <input type="text" placeholder="ex:HTML,CSS,JAVASCRIPT" id="os">
+           </datalist>
+           <BR></BR>
+        </fieldset>
+        <br><br>
+        <input type="submit">
+       
+</form>
+</body>
+</html>
